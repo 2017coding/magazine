@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="../images/htmlIco.ico">
+  <link rel="stylesheet" href="../css/config.css">
+  <link rel="stylesheet" href="../font_icon/iconfont.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="./magazine_list.css">
+  <title>杂志列表</title>
+</head>
+<body>
+   <!-- 最外层的盒子 -->
+   <div class="container">
+    <!-- 侧边栏 -->
+    <sidebar class="sidebar">
+      <div class="swich"><i class="icon iconfont icon-other icon-swich"></i></div>
+      <a href="../index/index.html"><i class="icon iconfont icon-int icon-index-logo"></i></a>
+      <ul class="nav">
+        <li class="nav-item">
+          <a href="javascript:;" style="color:rgb(26, 129, 225)">
+              <i class="icon iconfont icon-order"></i>
+              <span>杂志列表</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="../magazine_show/magazine_show.html">
+            <i class="icon iconfont icon-supply"></i>
+            <span>杂志秀</span>
+          </a>
+        </li>
+      </ul>
+      <div class="nav-user">
+        <li class="user-item login-not">
+          <a href="../login/login.html" class="login-not-show">注册/登录</a>
+        </li>
+        <li class="user-item login-success">
+          <a href="javascript:;" class="login-success-username">用户名</a>
+          <a href="javascript:;" class="login-out">退出<i class="icon iconfont icon-enter icon-login-out"></i></a>
+        </li>
+      </div>
+    </sidebar>
+    <!-- 内容部分 -->
+    <div class="content">
+      <!-- 头部导航 -->
+      <ul class="magazine-show-head">
+        <li class="item item-text">当前位置></li>
+        <li class="item"><a href="../index/index.html" class="item-index">首页></a></li>
+        <li class="item item-magazine-list">杂志列表</li>
+      </ul>
+      <!-- css瀑布流布局 -->
+      <div class="waterfall-box">
+        <div class="waterfall">
+          <div class="waterfall-item"></div>
+          <div class="waterfall-item"></div>
+          <div class="waterfall-item"></div>
+          <div class="waterfall-item"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 页面底部 -->
+    <footer class="footer">
+    </footer>
+  </div>
+  <!-- 页面脚本文件 -->
+  <script src="../js/common.js"></script>
+  <script src="./magazine_list.js"></script>
+</body>
+</html>

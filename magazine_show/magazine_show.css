@@ -1,0 +1,48 @@
+.container{
+  height: 100%;
+}
+.content{
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+/* 头部的导航栏 */
+.magazine-show-head{
+  padding-left: 20px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  background: rgb(220,220,220);
+}
+.magazine-show-head .item{
+  display: inline-block;
+  color: rgb(100,100,100);
+  cursor: pointer;
+}
+.magazine-show-head .item-index:hover{
+  color: rgb(26, 129, 225);
+}
+.magazine-show-head .item-magazine-show{
+  color: rgb(26, 129, 225);
+}
+
+/* 3d旋转 */
+
+/* 舞台 */
+.stage{
+  perspective: 2000px;/* 视距 */
+}
+/* 容器 */
+.stage .box{
+  position: relative;
+  width: 20%;
+  height: 200px;
+  margin: 100px auto;
+  transform-style: preserve-3d; /* 3D声明 */
+  transition: all 0.5s ease-in;
+}
+img{
+  position: absolute;
+  width: 100%;
+  transition: all 0.5s ease-in;
+}

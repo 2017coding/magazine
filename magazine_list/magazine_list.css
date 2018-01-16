@@ -1,0 +1,47 @@
+.container{
+  height: 100%;
+}
+.content{
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+/* 头部的导航栏 */
+.magazine-show-head{
+  padding-left: 20px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  background: rgb(220,220,220);
+}
+.magazine-show-head .item{
+  display: inline-block;
+  color: rgb(100,100,100);
+  cursor: pointer;
+}
+.magazine-show-head .item-index:hover{
+  color: rgb(26, 129, 225);
+}
+.magazine-show-head .item-magazine-list{
+  color: rgb(26, 129, 225);
+}
+
+/* 瀑布流布局 */
+.waterfall{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.waterfall-item{
+  width: 24%;
+}
+.waterfall-item, .image-box{
+  float: left;
+}
+.image-box{
+  margin: 5px;
+  border: 5px solid white;
+  box-shadow: 0 0 2px rgba(26, 129, 225, .5);
+}
+.image-box img{
+  width: 100%;
+}
