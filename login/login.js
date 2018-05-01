@@ -175,6 +175,9 @@
           return;
         }
       }
+
+      // 如果到了这里，则说明账号不存在
+      globalTips('账号不存在');
     }
 
     // 注册验证
@@ -197,6 +200,11 @@
           return;
         }
       }
+
+      // 如果到了这里，则表示当前存在用户列表，且注册新用户
+      globalTips('注册成功');
+      // 存下用户信息
+      setUserInfo(userName, passWord);
     }
 
     if (!check) {
