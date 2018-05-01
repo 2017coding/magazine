@@ -43,19 +43,14 @@
 
   // 记住密码的点击
   iconSDelect.onclick = function() {
-    // 用一个变量记录记住密码的状态
-    var rememberStatus = true;
-    if (iconSDelect.style.color === color) {
-      remember.style.color = beforeColor;
-      iconSDelect.style.color = beforeColor;
-      rememberStatus = false;
-    } else {
-      remember.style.color = color;
-      iconSDelect.style.color = color;
-    }
-    localStorage.setItem('rememberUserInfo', rememberStatus);
+    remomberStatus()
   };
   remember.onclick = function() {
+    remomberStatus()
+  };
+
+  // 记住密码的状态
+  function remomberStatus() {
     // 用一个变量记录记住密码的状态
     var rememberStatus = true;
     if (iconSDelect.style.color === color) {
@@ -154,7 +149,7 @@
     if (type === 'login') {
       // 如果当前没有用户
       if (!userInfo) {
-        globalTips('用户不存在');
+        globalTips('账号不存在');
         return;
       }
       // 得到数组
@@ -180,13 +175,13 @@
           return;
         }
       }
-      globalTips('账号不存在');
     }
 
     // 注册验证
     if (type === "register") {
       // 如果当前没有用户
       if (!userInfo) {
+        globalTips('注册成功');
         // 存下用户信息
         setUserInfo(userName, passWord);
         return;
@@ -202,9 +197,6 @@
           return;
         }
       }
-      globalTips('注册成功');
-      // 存下用户信息
-      setUserInfo(userName, passWord);
     }
 
     if (!check) {
